@@ -2,9 +2,11 @@ package com.salman.springapp;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.io.IOException;
+
 public class AnnotationDemoApp {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         Coach theCoach = context.getBean("tennisCoach", Coach.class);
         System.out.println(theCoach.getDailyWorkout());

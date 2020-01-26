@@ -1,7 +1,9 @@
 package com.salman.springapp;
 
+import java.io.IOException;
+
 public interface Coach {
 
     String getDailyWorkout();
-    String getDailyFortune();
+    String getDailyFortune() throws IOException;
 }

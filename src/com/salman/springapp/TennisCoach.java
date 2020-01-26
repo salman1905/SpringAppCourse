@@ -4,20 +4,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
+
 @Component
 public class TennisCoach implements Coach{
 
 
-    @Qualifier("randomFortuneService")
+    @Qualifier("newWorld")
     @Autowired
     private FortuneService fortuneService;
 
     public TennisCoach() {
-        System.out.println(">> inside the default constructor");
     }
 
     public void doYourJobs(FortuneService fortuneService) {
-        System.out.println(">> inside setter injection");
         this.fortuneService = fortuneService;
     }
 
@@ -32,7 +32,7 @@ public class TennisCoach implements Coach{
     }
 
     @Override
-    public String getDailyFortune() {
+    public String getDailyFortune() throws IOException {
         return fortuneService.getFortune();
     }
 }
