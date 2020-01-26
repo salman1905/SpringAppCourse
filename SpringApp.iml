@@ -16,17 +16,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" exported="">
+    <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../Desktop/SpringJars" />
+          <root url="file://$MODULE_DIR$/../SpringJars" />
         </CLASSES>
         <JAVADOC />
         <SOURCES>
-          <root url="file://$MODULE_DIR$/../Desktop/SpringJars" />
+          <root url="file://$MODULE_DIR$/../SpringJars" />
         </SOURCES>
-        <jarDirectory url="file://$MODULE_DIR$/../Desktop/SpringJars" recursive="false" />
-        <jarDirectory url="file://$MODULE_DIR$/../Desktop/SpringJars" recursive="false" type="SOURCES" />
+        <jarDirectory url="file://$MODULE_DIR$/../SpringJars" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../SpringJars" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
   </component>
