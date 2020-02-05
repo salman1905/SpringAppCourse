@@ -2,6 +2,7 @@ package com.salman.springapp;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -10,7 +11,7 @@ import java.io.IOException;
 public class TennisCoach implements Coach{
 
 
-    @Qualifier("newWorld")
+    @Qualifier("randomFortuneService")
     @Autowired
     private FortuneService fortuneService;
 
@@ -32,7 +33,7 @@ public class TennisCoach implements Coach{
     }
 
     @Override
-    public String getDailyFortune() throws IOException {
+    public String getDailyFortune()  {
         return fortuneService.getFortune();
     }
 }
